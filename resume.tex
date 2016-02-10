@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% Alex Hasha's resume
+%%
+%% Last updated January 16th, 2014
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%
+%% The following code sets up the document formatting
+%%
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[margin, line]{res_yy}
+
+%\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\bf}
+
+
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+\name{Alexander Hasha}
+
+%this is right aligned
+\address{
+phone: (646) 483-1576 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ email: ahasha@gmail.com  
+%website: http://web.me.com/ahasha \hfill email: ahasha@gmail.com  
+}
+
+\begin{resume}
+
+
+
+%%
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+
+%\section{\textsc{Summary}}
+%An experienced mathematician with over ten years experience in scientific computing, and a track record of producing practical solutions to tough, real-world problems.  I have managed technical teams, and understand the importance of
+%I am a motivated and self-starting advanced PhD student at the Courant Institute of Mathematical Science. 
+%In addition to the strong quantitative skills necessary for research in mathematical science, I have strong writing and communication skills.  My objective is to obtain a full-time position in quantitative financial analysis, starting in Summer 2008.  I would be particularly interested in working with weather derivatives or weather insurance contracts.
+
+
+%%
+%% the meat of the resume starts now
+%%
+
+\begin{formatb}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Recent \\ Experience}}
+
+\employer{\textbf{Capital One Labs}}
+\title{Director of Data Science}
+\location{New York, NY}
+\dates{December 2012 -- Present}
+\begin{position}
+I oversee a team of junior and senior Data Scientists developing data products to support consumer products and internal analytics at Capital One.  
+\begin{itemize}
+\item Developed Bundle technology into the first Hadoop-based production application at Capital One.
+\item Improved accuracy of Bundle matching algorithm to \begin{math} > 99 \% \end{math} precision.
+\item Led adoption of test-driven development for Data Science team.
+\item Created a generalized framework for data pipeline development in python that facilitates automated testing and modular design.  It leverages Luigi (https://github.com/spotify/luigi) and Apache Avro (avro.apache.org), and is used by the entire Data Science team.
+\end{itemize}
+\end{position}
+
+\employer{\textbf{Bundle.com}}
+\title{Lead Data Scientist}
+\location{New York, NY}
+\dates{September 2010 -- December 2012}
+\begin{position}
+I oversaw a team of developers and data analysts building consumer facing data products based on billions of credit card transactions from a major card issuer. Major achievements included:
+\begin{itemize}
+\item A parallel text clustering algorithm that detects merchant names in credit card transactiondescriptions and generates a national merchant database.
+\item Machine learning algorithms to perform scalable record linkage between this database and millions of local business listings.
+\item An automated data processing platform that ingests billions of financial transactions and multiple sources of merchant directory data on a weekly basis to power a merchant review website. Deployed using Hadoop, Hive, Lucene, MySQL, and other open source software tools.
+\item Worked with CEO to pitch company for acquisition to major banks, led technology due diligence process from Bundle side.
+\end{itemize}
+\end{position}
+
+\employer{\textbf{Citigroup -- Fixed Income Quantitative Analysis}}
+\title{Associate}
+\location{New York, NY}
+\dates{August 2008 -- August 2010}
+\begin{position}
+I worked on the agency mortgage prepayment modeling team, and also supported the term structure modeling team. My major contributions included developing a model for estimating percentage of mortgage pools that were eligible to refinance under post-2008 mortgage credit standards, taking initiative to document thousands of lines of mission-critical, undocumented legacy code, and writing dozens of articles for publication. %My time was split 80\%/20\% between model development and writing articles for publication.  Projects included:
+%\begin{itemize}
+%\item A modeling framework for estimating percentage of mortgage pools that were eligible to refinance under post-2008 mortgage credit standards.
+%\item Took initiative to document thousands of lines of mission-critical, undocumented legacy code.
+%\item \textit{Commodity derivatives}: An algorithm for computing partial vegas of a Monte Carlo Heston model. %\textit{Credit Derivatives} During 2007 summer internship, developed an Excel based back-testing tool for relative value trades in the CDX/iTraxx index tranche market.
+%\end{itemize}
+\end{position}
+
+%\employer{\textbf{Citigroup -- Fixed Income Quantitative Analysis}}
+%\title{Summer Associate}
+%\location{New York, NY}
+%\dates{Summer 2006, Summer 2007}
+%\begin{position}
+%\textbf{2006}\ \ Worked in mortgage analysis group developing data analysis tools to elucidate trends in mortgage
+%prepayments.  Analyzed and revised a swaption model the group supplied to the trading desk. \newline \textbf{2007}\ \ Worked in credit derivatives research developing an Excel based back-testing tool for relative value
+%trades in the CDX/iTraxx index tranche market.
+%\end{position}
+
+%\employer{\textbf{Woods Hole Oceanographic Institute}}
+%\title{Summer Research Fellow}
+%\location{Woods Hole, MA}
+%\dates{Summer 2005}
+%\begin{position}
+%A  ten-week research collaboration  with scientists from a variety of fields who share a common interest in geophysical fluid dynamics. 
+%\end{position}
+
+%\employer{\textbf{Massachusetts Institute of Technology}}
+%\title{Student Researcher}
+%\location{Cambridge, MA}
+%\dates{2000 - 2002}
+%\begin{position}
+%Undertook a research project in fluid dynamics leading to a publication in the Journal of Fluid Mechanics.
+%\end{position}
+
+\section{\textsc{Computing Skills}}
+\begin{itemize}
+\item Languages: Python, Perl, Java, R, C, \Cplusplus %matlab
+\item Applications and Tools: Scikit-learn, MapReduce, Hadoop, Avro, Hive, MySQL, Lucene, Excel, \LaTeX
+\end{itemize}
+
+%%
+%% We use the same formatting for projects as for work experience
+%% Shown below is the formatting used previously
+%%
+%%  \begin{formatb}
+%%    \employer{l}\title{r}\\
+%%    \location{l}\dates{r}\\
+%%    \body\\
+%%  \end{formatb}
+%%
+%% 
+%%  Note that \location is now being used for non-location information
+%%
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Education}}
+
+\textbf{Courant Institute of Mathematical Science -- NYU} \hfill 2003 -- 2008 \\
+\textit{Ph.D. in Mathematics}, GPA: 4.0/4.0 \hfill Advisor: Oliver B\"uhler \\
+\newline
+\textbf{Cambridge University -- Trinity College} \hfill 2002 -- 2003 \\ 
+\textit{Master of Advanced Study in Mathematics with Merit} \\
+\newline
+\textbf{Massachusetts Institute of Technology} \hfill 1998 -- 2002 \\
+\textit{Bachelor of Science in Mathematics}, GPA: 5.0/5.0, Phi Beta Kappa\\
+
+\section{\textsc{Publications}}
+\begin{itemize}
+\item Y. Karpishpan, O. Turel, and A. Hasha, ``Introducing the Citi LMM Term Structure Model for Mortgages,''
+The Journal of Fixed Income, 2010, Vol. 20, No. 1, pp. \mbox{44--58}.
+\item A. Hasha, O. B\"uhler, and J. Scinocca,  ``Gravity-wave refraction by three-dimensionally 
+varying winds and the global transport of angular momentum,''  
+Journal of the Atmospheric Sciences, 2008, Vol. 65., pp.
+\mbox{2892--2906}.
+%\item A. Hasha, ``A Search for Baroclinic Structures,'' Proceedings of the 2005 WHOI Summer Geophysical Fluid Dynamics Program.  
+\item J.W.M. Bush, and A. Hasha, ``On the Collision of Laminar Jets:  Fluid Chains and Fishbones,"  Journal of Fluid Mechanics, 2004, Vol. 511., pp. 285--310.
+\item A. Hasha, ``Fluid Fishbones," Physics of Fluid, 2002., Vol. 14., No. 9., pg S8.
+\end{itemize}
+
+\section{\textsc{Awards}}
+Moses A. Greenfield Interdisciplinary Research Award (2007), National Defense Science and Engineering Graduate Research Fellow (2004), National Science Foundation Graduate Research Fellow (2003), Trinity College Studentship in Mathematics (2002), MIT Chapter of Phi Beta Kappa (2002)
+
+
+%%
+%% This section could also use more formatting, but looks ok, as is
+%%
+
+%\section{\textsc{Qualifications}}
+
+%\emph{Programming Languages}: \Cplusplus, \CSharp, Cg, HLSL, ARB assembly, SML, OCaML, PHP, MySQL, Java, Python, Perl, MIPS assembly
+
+%\emph{Libraries and Tools}: Vim, STL, DirectX, OpenGL, \LaTeX, GIMP, Adobe Suite, Macromedia Suite, MatLab, Mathematica, Microsoft Visual Studio, GCC, GDB
+
+\end{resume}
+\end{document}
