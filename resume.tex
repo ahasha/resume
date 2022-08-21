@@ -1,8 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 
+%%
 %% Alex Hasha's resume
 %%
-%% Last updated January 16th, 2014
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -10,18 +9,14 @@
 %%
 %% The following code sets up the document formatting
 %%
-
 %this assumes that res_yy.sty is in some path
-\documentstyle[margin, line]{res_yy}
-
-%\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+\documentstyle[hyperref, margin, line]{res_yy}
 
 \addtolength{\oddsidemargin}{-0.65in}
-\addtolength{\voffset}{-0.30in}
-\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+% �\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} % \addtolength{\textheight}{1.50in}
 
 \renewcommand{\namefont}{\LARGE\bf}
-
 
 
 %%
@@ -50,27 +45,14 @@
 
 %this is right aligned
 \address{
-phone: (646) 483-1576 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ email: ahasha@gmail.com  
-%website: http://web.me.com/ahasha \hfill email: ahasha@gmail.com  
+ahasha@gmail.com \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ (857) 703-7425 \ \ \ \ \ \ \ \ \ \ \ \url{https://www.linkedin.com/in/alexander-hasha-30a26a8/}
 }
 
 \begin{resume}
 
+\section{\textsc{Summary}}
 
-
-%%
-%% This section of code is inelegant, but I'm too lazy to fix it
-%%
-
-%\section{\textsc{Summary}}
-%An experienced mathematician with over ten years experience in scientific computing, and a track record of producing practical solutions to tough, real-world problems.  I have managed technical teams, and understand the importance of
-%I am a motivated and self-starting advanced PhD student at the Courant Institute of Mathematical Science. 
-%In addition to the strong quantitative skills necessary for research in mathematical science, I have strong writing and communication skills.  My objective is to obtain a full-time position in quantitative financial analysis, starting in Summer 2008.  I would be particularly interested in working with weather derivatives or weather insurance contracts.
-
-
-%%
-%% the meat of the resume starts now
-%%
+Experienced Data Science leader with deep technical expertise in applied mathematics and software engineering. I bring a solid track record in risk management and the delivery of complex data products and tools. 
 
 \begin{formatb}
   \employer{l}\title{r}\\
@@ -78,33 +60,81 @@ phone: (646) 483-1576 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
   \body\\
 \end{formatb}
 
-\section{\textsc{Recent \\ Experience}}
-
-\employer{\textbf{Capital One Labs}}
-\title{Director of Data Science}
-\location{New York, NY}
-\dates{December 2012 -- Present}
-\begin{position}
-I oversee a team of junior and senior Data Scientists developing data products to support consumer products and internal analytics at Capital One.  
+\section{\textsc{Key Achievements}}
 \begin{itemize}
-\item Developed Bundle technology into the first Hadoop-based production application at Capital One.
-\item Improved accuracy of Bundle matching algorithm to \begin{math} > 99 \% \end{math} precision.
-\item Led adoption of test-driven development for Data Science team.
-\item Created a generalized framework for data pipeline development in python that facilitates automated testing and modular design.  It leverages Luigi (https://github.com/spotify/luigi) and Apache Avro (avro.apache.org), and is used by the entire Data Science team.
+  \item Developed data and software infrastructure to modernize carbon accounting and accelerate the climate transition.
+  \item Strengthened Capital One's model risk management program for non-financial applications of machine learning
+  \item Enabled Capital One's cloud migration as product owner for an analytical platform with over 1000 data science users
+  \item Founding developer of the first successful "inner-sourced" data science software project at Capital One, evangelizing software engineering best practices and open source collaboration methods
+  \item Led development of big data machine learning technologies at Bundle.com that were acquired and launched at Capital One
+  \item PhD in mathematics researching wave mechanics problems in global climate models
+  
 \end{itemize}
+\section{\textsc{Experience}}
+
+\employer{\textbf{Persefoni}}
+\title{Senior Director of Data Science}
+\location{Milton, MA}
+\dates{June 2021 -- August 2022}
+\begin{position}
+Persefoni is a global software company that enables organizations and financial institutions to create regulatory-grade carbon footprint inventories and climate disclosures.  I hired and led a team of three Data Scientists that embedded in engineering pods to deliver greenhouse gas emissions calculations on the Persefoni SaaS platform.  My mission was to ensure that these calculations were at once scientifically accurate, based on the best available data, and verifiably aligned to key governing standards such as the \href{https://ghgprotocol.org/}{Greenhouse Gas (GHG) Protocol} and the \href{https://carbonaccountingfinancials.com/}{Partnership for Carbon Accounting Financials (PCAF)}. I developed processes and testing infrastructure to promote accuracy and transparency, and used my experience in analytical validation to identify and resolve calculation errors before releasing to production.  My team sourced, structured, and integrated scientific and financial databases needed to power the calculations. I also drove initial R\&D to develop intelligent algorithms that help customers automatically identify the GHG protocol calculations corresponding to their available data sources.  
 \end{position}
+
+
+\employer{\textbf{Capital One}}
+\title{Senior Director of Data Science, Model Risk Office}
+\location{Milton, MA}
+\dates{February 2016 -- July 2021}
+\begin{position}
+As the Divisional Model Risk Officer for the Technology, Digital, and HR divisions, I led independent validation (peer review)
+of machine learning models in diverse business domains, including chatbots, cybersecurity, data management, identity verification, credit card fraud, and underwriting. My team upheld standards of practice and enabled informed executive decision making with unbiased evaluation of machine learning technologies.
+
+As a Technical Product Advisor for the Enterprise Machine Learning Platform, I worked to ensure that Capital One's primary model development and
+deployment technology platform met the needs of Data Scientists and enables streamlined and effective model governance.
+\end{position}
+
+\employer{\textbf{Capital One}}
+\title{Senior Director of Data Science, Digital Labs}
+\location {New York, NY}
+\dates{August 2012 -- February 2016}
+\begin{position}
+I led a Data Science team focused on bringing the Bundle ML technology
+to market.  We achieved significant accuracy improvements and actively partnered
+with the Technology organization to launch Capital One's first Hadoop-based
+production application. In this process, I developed a systematic software
+framework for building data pipelines that was re-used for multiple
+internal projects inside and outside my organization.  I founded and led a
+Frameworks \& Platforms group within the Labs to support and these tools while
+evangelizing open source collaboration methods and software engineering best practices,
+such as automated testing.
+
+\end{position}
+
+%%\employer{\textbf{Capital One}}
+%%\title{Director of Data Science, Digital Labs}
+%%\location{New York, NY}
+%%\dates{December 2012 -- August 2014}
+%%\begin{position}
+%%Led a team of Data Scientists developing data products to support consumer products and internal analytics at Capital One.
+%%\begin{itemize}
+%%\item Developed Bundle technology into the first Hadoop-based production application at Capital One.
+%%\item Improved accuracy of Bundle matching algorithm to \begin{math} > 99 \% \end{math} precision.
+%%\item Led adoption of test-driven development for Data Science team.
+%%\item Created a generalized framework for data pipeline development in python that facilitates automated testing and modular design.
+%%\end{itemize}
+%%\end{position}
 
 \employer{\textbf{Bundle.com}}
 \title{Lead Data Scientist}
 \location{New York, NY}
 \dates{September 2010 -- December 2012}
 \begin{position}
-I oversaw a team of developers and data analysts building consumer facing data products based on billions of credit card transactions from a major card issuer. Major achievements included:
+Led a team of developers and data analysts building consumer facing data products based on billions of credit card transactions.
+Major achievements included:
 \begin{itemize}
-\item A parallel text clustering algorithm that detects merchant names in credit card transactiondescriptions and generates a national merchant database.
-\item Machine learning algorithms to perform scalable record linkage between this database and millions of local business listings.
-\item An automated data processing platform that ingests billions of financial transactions and multiple sources of merchant directory data on a weekly basis to power a merchant review website. Deployed using Hadoop, Hive, Lucene, MySQL, and other open source software tools.
-\item Worked with CEO to pitch company for acquisition to major banks, led technology due diligence process from Bundle side.
+  \item Developed a machine learning pipeline to power a merchant review website
+  \item Hired and led a team to scale the data product and bring it to market
+  \item Worked with CEO to pitch company for acquisition to major banks, leading the technical due diligence process
 \end{itemize}
 \end{position}
 
@@ -113,45 +143,72 @@ I oversaw a team of developers and data analysts building consumer facing data p
 \location{New York, NY}
 \dates{August 2008 -- August 2010}
 \begin{position}
-I worked on the agency mortgage prepayment modeling team, and also supported the term structure modeling team. My major contributions included developing a model for estimating percentage of mortgage pools that were eligible to refinance under post-2008 mortgage credit standards, taking initiative to document thousands of lines of mission-critical, undocumented legacy code, and writing dozens of articles for publication. %My time was split 80\%/20\% between model development and writing articles for publication.  Projects included:
-%\begin{itemize}
-%\item A modeling framework for estimating percentage of mortgage pools that were eligible to refinance under post-2008 mortgage credit standards.
-%\item Took initiative to document thousands of lines of mission-critical, undocumented legacy code.
-%\item \textit{Commodity derivatives}: An algorithm for computing partial vegas of a Monte Carlo Heston model. %\textit{Credit Derivatives} During 2007 summer internship, developed an Excel based back-testing tool for relative value trades in the CDX/iTraxx index tranche market.
-%\end{itemize}
+I worked on the agency mortgage prepayment modeling team and supported the term structure modeling team.
+%My major contributions included developing a model for estimating refinancing eligibility of mortgage pools under post-2008
+%underwriting standards, taking initiative to document thousands of lines of mission-critical legacy code,
+%and writing dozens of market reports for bank clients.
+
 \end{position}
 
-%\employer{\textbf{Citigroup -- Fixed Income Quantitative Analysis}}
-%\title{Summer Associate}
-%\location{New York, NY}
-%\dates{Summer 2006, Summer 2007}
-%\begin{position}
-%\textbf{2006}\ \ Worked in mortgage analysis group developing data analysis tools to elucidate trends in mortgage
-%prepayments.  Analyzed and revised a swaption model the group supplied to the trading desk. \newline \textbf{2007}\ \ Worked in credit derivatives research developing an Excel based back-testing tool for relative value
-%trades in the CDX/iTraxx index tranche market.
-%\end{position}
+%%\employer{\textbf{Citigroup -- Fixed Income Quantitative Analysis}}
+%%\title{Summer Associate}
+%%\location{New York, NY}
+%%\dates{Summer 2006, Summer 2007}
+%%\begin{position}
+%%\textbf{2006}\ \ Worked in mortgage analysis group developing data analysis tools to elucidate trends in mortgage
+%%prepayments.  Analyzed and revised a swaption model the group supplied to the trading desk. \newline \textbf{2007}\ \ Worked in credit
+%%derivatives research developing an Excel based back-testing tool for relative value
+%%trades in the CDX/iTraxx index tranche market.
+%%\end{position}
 
-%\employer{\textbf{Woods Hole Oceanographic Institute}}
-%\title{Summer Research Fellow}
-%\location{Woods Hole, MA}
-%\dates{Summer 2005}
-%\begin{position}
-%A  ten-week research collaboration  with scientists from a variety of fields who share a common interest in geophysical fluid dynamics. 
-%\end{position}
+\employer{\textbf{Courant Institute, NYU}}
+\title{PhD Student, Mathematics}
+\location{New York, NY}
+\dates{2003-2008}
+\begin{position}
+Research focused on wave-mean flow interactions in the atmosphere with applications to global climate models.
+My specialties were in asymptotic analysis of partial differential equations and wave refraction in randomly varying media.
+\end{position}
 
-%\employer{\textbf{Massachusetts Institute of Technology}}
-%\title{Student Researcher}
-%\location{Cambridge, MA}
-%\dates{2000 - 2002}
-%\begin{position}
-%Undertook a research project in fluid dynamics leading to a publication in the Journal of Fluid Mechanics.
-%\end{position}
+%%\employer{\textbf{Woods Hole Oceanographic Institute}}
+%%\title{Summer Research Fellow}
+%%\location{Woods Hole, MA}
+%%\dates{Summer 2005}
+%%\begin{position}
+%%A ten-week research collaboration  with scientists from a variety of fields who share a common interest in geophysical fluid dynamics.
+%%\end{position}
 
-\section{\textsc{Computing Skills}}
+%%\employer{\textbf{Massachusetts Institute of Technology}}
+%%\title{Student Researcher}
+%%\location{Cambridge, MA}
+%%\dates{2000 - 2002}
+%%\begin{position}
+%%Undertook a research project in fluid dynamics leading to a publication in the Journal of Fluid Mechanics.
+%%\end{position}
+
+\section{\textsc{Volunteering}}
+
+\employer{\textbf{Sustainable Milton}}
+\title{Board Member}
+\location{Milton, MA}
+\dates{December 2020 -- Present}
+\begin{position}
+Partnering with local non-profits to build community around climate action.  We aim to draw in Milton residents with accessible and rewarding actions to combat climate change and create communities around these actions that residents find personally rewarding. 
 \begin{itemize}
-\item Languages: Python, Perl, Java, R, C, \Cplusplus %matlab
-\item Applications and Tools: Scikit-learn, MapReduce, Hadoop, Avro, Hive, MySQL, Lucene, Excel, \LaTeX
+    \item Leading a working group focused on encouraging the town of Milton to develop a climate action plan.
+    \item Coordinated the launch of a community action platform \newline (see \url{https://community.massenergize.org/sustainablemilton})
+    \item Developing data dashboards for community organizers from publicly available datasets
+    \newline (see \url{https://github.com/massenergize/rad_pipeline})
 \end{itemize}
+\end{position}
+
+
+\section{\textsc{Skills}}
+Applied Mathematics, Machine Learning, Quality Assurance, R\&D, Python, SQL, Databricks, Spark, Java, R, Scikit-learn, pandas, Excel, \LaTeX
+%%\begin{itemize}
+%%\item Languages: Python, Perl, Java, R, C, \Cplusplus %matlab
+%%\item Applications and Tools: Scikit-learn, Spark, MapReduce, Hadoop, Avro, Hive, MySQL, Lucene, Excel, \LaTeX
+%%\end{itemize}
 
 %%
 %% We use the same formatting for projects as for work experience
@@ -163,7 +220,7 @@ I worked on the agency mortgage prepayment modeling team, and also supported the
 %%    \body\\
 %%  \end{formatb}
 %%
-%% 
+%%
 %%  Note that \location is now being used for non-location information
 %%
 
@@ -177,7 +234,7 @@ I worked on the agency mortgage prepayment modeling team, and also supported the
 \textbf{Courant Institute of Mathematical Science -- NYU} \hfill 2003 -- 2008 \\
 \textit{Ph.D. in Mathematics}, GPA: 4.0/4.0 \hfill Advisor: Oliver B\"uhler \\
 \newline
-\textbf{Cambridge University -- Trinity College} \hfill 2002 -- 2003 \\ 
+\textbf{Cambridge University -- Trinity College} \hfill 2002 -- 2003 \\
 \textit{Master of Advanced Study in Mathematics with Merit} \\
 \newline
 \textbf{Massachusetts Institute of Technology} \hfill 1998 -- 2002 \\
@@ -187,28 +244,17 @@ I worked on the agency mortgage prepayment modeling team, and also supported the
 \begin{itemize}
 \item Y. Karpishpan, O. Turel, and A. Hasha, ``Introducing the Citi LMM Term Structure Model for Mortgages,''
 The Journal of Fixed Income, 2010, Vol. 20, No. 1, pp. \mbox{44--58}.
-\item A. Hasha, O. B\"uhler, and J. Scinocca,  ``Gravity-wave refraction by three-dimensionally 
-varying winds and the global transport of angular momentum,''  
+\item A. Hasha, O. B\"uhler, and J. Scinocca,  ``Gravity-wave refraction by three-dimensionally
+varying winds and the global transport of angular momentum,''
 Journal of the Atmospheric Sciences, 2008, Vol. 65., pp.
 \mbox{2892--2906}.
-%\item A. Hasha, ``A Search for Baroclinic Structures,'' Proceedings of the 2005 WHOI Summer Geophysical Fluid Dynamics Program.  
+%\item A. Hasha, ``A Search for Baroclinic Structures,'' Proceedings of the 2005 WHOI Summer Geophysical Fluid Dynamics Program.
 \item J.W.M. Bush, and A. Hasha, ``On the Collision of Laminar Jets:  Fluid Chains and Fishbones,"  Journal of Fluid Mechanics, 2004, Vol. 511., pp. 285--310.
 \item A. Hasha, ``Fluid Fishbones," Physics of Fluid, 2002., Vol. 14., No. 9., pg S8.
 \end{itemize}
 
 \section{\textsc{Awards}}
 Moses A. Greenfield Interdisciplinary Research Award (2007), National Defense Science and Engineering Graduate Research Fellow (2004), National Science Foundation Graduate Research Fellow (2003), Trinity College Studentship in Mathematics (2002), MIT Chapter of Phi Beta Kappa (2002)
-
-
-%%
-%% This section could also use more formatting, but looks ok, as is
-%%
-
-%\section{\textsc{Qualifications}}
-
-%\emph{Programming Languages}: \Cplusplus, \CSharp, Cg, HLSL, ARB assembly, SML, OCaML, PHP, MySQL, Java, Python, Perl, MIPS assembly
-
-%\emph{Libraries and Tools}: Vim, STL, DirectX, OpenGL, \LaTeX, GIMP, Adobe Suite, Macromedia Suite, MatLab, Mathematica, Microsoft Visual Studio, GCC, GDB
 
 \end{resume}
 \end{document}
