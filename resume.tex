@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+s%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% Alex Hasha's resume
 %%
@@ -10,7 +10,8 @@
 %% The following code sets up the document formatting
 %%
 %this assumes that res_yy.sty is in some path
-\documentstyle[hyperref, margin, line]{res_yy}
+\documentstyle[hyperref, margin, line, fontawesome5]{res_yy}
+
 
 \addtolength{\oddsidemargin}{-0.65in}
 % �\addtolength{\voffset}{-0.30in}
@@ -45,8 +46,13 @@
 
 %this is right aligned
 \address{
-ahasha@gmail.com \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ (857) 703-7425 \ \ \ \ \ \ \ \ \ \ \ \url{https://www.linkedin.com/in/alexander-hasha-30a26a8/}
+\href{mailto:ahasha@gmail.com}{\faEnvelope \ \ ahasha@gmail.com} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \faPhone \ (857) 703-7425 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \href{https://www.linkedin.com/in/alexander-hasha}{\faLinkedin \ \ \myuline{alexander-hasha}} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
 }
+%% \href{https://github.com/ahasha}{
+%%    \faGithub
+%%    \ \ 
+%%    \myuline{ahasha}}
+%%}
 
 \begin{resume}
 
